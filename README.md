@@ -1,6 +1,6 @@
 # gograd
 
-## What it is?
+## What is it?
 This is a partial port of [capmangrad](https://github.com/dsprn/capmangrad) to the Go programming language, used here primarily to revise my rough understanding of the language.
 As of the time the initial commit was made this implementation lacked some features capmangrad added on top of [micrograd](https://github.com/karpathy/micrograd), such as the capability to import/export a trained model to a json file and a few others. For a complete list take a look at the TODOS section below.
 It's worth noting that one of these features, namely cross validation (used here to look for the L2 regularization lambda hyperparameter), takes adavantage, in this implementation, of the concurrent capabilities of the Go programming language using goroutines and channels to complete its task.
